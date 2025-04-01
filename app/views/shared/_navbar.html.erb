@@ -2,7 +2,7 @@
   <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
     <div class="navbar-brand w-full">
       <%= link_to root_path, data: { turbo: false } do %>
-        <%= image_tag("logo.png", alt: "image", style: "height: 100px; width: auto;") %>
+        <%= image_tag("MOO_LOGO-vektor.png", alt: "image", style: "height: 70px; width: auto;") %>
       <% end %>
     </div>
     <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -14,20 +14,20 @@
       </div>
       <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
         <ul class="navbar-nav">
-          <li class="nav-item"><%= link_to 'Home', root_path, class: "nav-link", data: { turbo: false } %></li>
+          <li class="nav-item"><%= link_to 'Why MOO?', root_path, class: "nav-link", data: { turbo: false } %></li>
+          <li class="nav-item"><%= link_to 'Solutions', solutions_path, class: "nav-link", data: { turbo: false } %></li>
+          <li class="nav-item"><%= link_to 'Resources', resources_path, class: "nav-link", data: { turbo: false } %></li>
+          <li class="nav-item"><%= link_to 'Pricing', pricing_path, class: "nav-link", data: { turbo: false } %></li>
+          <li class="nav-item"><%= link_to 'Think Green', think_green_path, class: "nav-link nav-green", data: { turbo: false } %></li>
           <li class="nav-item"><%= link_to 'About Us', about_us_path, class: "nav-link", data: { turbo: false } %></li>
-          <li class="nav-item"><%= link_to 'Projects', projects_path, class: "nav-link", data: { turbo: false } %></li>
-          <li class="nav-item"><%= link_to 'Partnership', partnership_path, class: "nav-link", data: { turbo: false } %></li>
           <li class="nav-item"><%= link_to 'Contact', contact_path, class: "nav-link", data: { turbo: false } %></li>
         </ul>
       </div>
     </div>
     <div class="navbar-other w-full flex justify-end items-center ml-auto">
       <ul class="navbar-nav flex-row items-center">
-        <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to 'Log Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link text-[#343f52] hover:text-[#3f78e0]" %>
-          <% end %>
+        <li class="nav-item">
+          <%= link_to 'Book Your Demo', "https://calendly.com/moocrew-intro/30min", target: "_blank", class: "btn btn-book !rounded-full !px-6 !py-2", aria: { label: "Book your demo" }, title: "Book your demo" %>
         </li>
         <li class="nav-item xl:hidden lg:hidden">
           <button class="hamburger offcanvas-nav-btn"><span></span></button>

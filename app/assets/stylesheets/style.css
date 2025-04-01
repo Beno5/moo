@@ -35090,3 +35090,35 @@ blockquote.video-wrapper .video-content.icon-top:before {
 .projects {
   justify-content: space-around !important;
 }
+
+/* Stil za dugme */
+.btn-book {
+  background-color: #eb5342 !important;
+  color: white !important;
+  padding: 12px 24px !important;
+  border-radius: 50px !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease !important;
+  border: none !important; /* Da eliminišeš okvire */
+}
+
+/* Za hover bez promena */
+.btn-book:hover {
+  background-color: #d14e3b !important; /* Tamnija pozadina pri hover-u */
+  color: black !important; /* Da tekst ostane beli */
+  border: none !important; /* Ukidanje okvira pri hover-u */
+  transform: none !important; /* Sprečavanje smanjenja slova */
+}
+
+.nav-green {
+  color: #4caf50; /* Svetla zelena */
+  transition: color 0.3s ease; /* Glatka promena boje */
+}
+
+.text-bold-orange {
+  color: #eb5342; /* Ljubičasta boja */
+  font-weight: bold; /* Bold tekst */
+}
