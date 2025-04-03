@@ -6,19 +6,16 @@ class Project < ApplicationRecord
 
   before_save :apply_cloudinary_transformation
 
-
   def plain_content
-      ActionView::Base.full_sanitizer.sanitize(content)
+    ActionView::Base.full_sanitizer.sanitize(content)
   end
-
 
   def apply_cloudinary_transformation
     return unless image.attached?
 
     image.variant(
-      resize_to_fill: [950, 520, { crop: :pad, background: "white" }],
-      quality: "auto"
+      resize_to_fill: [950, 520, { crop: :pad, background: 'white' }],
+      quality: 'auto'
     )
   end
-
 end

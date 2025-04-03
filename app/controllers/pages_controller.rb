@@ -1,26 +1,17 @@
 class PagesController < ApplicationController
+  def home; end
 
-  def home
-    
-  end
-  def whymoo
-  end
+  def whymoo; end
 
-  def solutions
-  end
+  def solutions; end
 
-  def resources
-  end
+  def resources; end
 
-  def pricing
-  end
+  def pricing; end
 
-  def about_us
-  end
+  def about_us; end
 
-  def think_green
-  end
+  def think_green; end
 
-  def contact
-  end
+  def contact; end
 end

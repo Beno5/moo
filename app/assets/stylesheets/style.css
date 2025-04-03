@@ -35085,6 +35085,14 @@ blockquote.video-wrapper .video-content.icon-top:before {
   .margin-mobile-projekt {
     margin-top: 25px !important;
   }
+
+  .logo-mobile {
+    height: 50px !important;
+  }
+
+  .book-mobile {
+    font-size: 0.7rem !important;
+  }
 }
 
 .projects {
@@ -35114,11 +35122,21 @@ blockquote.video-wrapper .video-content.icon-top:before {
 }
 
 .nav-green {
-  color: #4caf50; /* Svetla zelena */
-  transition: color 0.3s ease; /* Glatka promena boje */
+  color: #4caf50 !important; /* Svetla zelena */
+  transition: color 0.3s ease !important; /* Glatka promena boje */
 }
 
 .text-bold-orange {
   color: #eb5342; /* Ljubičasta boja */
   font-weight: bold; /* Bold tekst */
+}
+
+.arrow-container {
+  display: inline-block;
+  background-color: gray;
+  padding: 0 12px;
+  border-radius: 50%;
+  margin-left: 10px; /* Adjust spacing */
+  font-weight: bold;
+  font-size: larger;
 }

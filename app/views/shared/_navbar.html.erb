@@ -2,32 +2,36 @@
   <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
     <div class="navbar-brand w-full">
       <%= link_to root_path, data: { turbo: false } do %>
-        <%= image_tag("MOO_LOGO-vektor.png", alt: "image", style: "height: 70px; width: auto;") %>
+        <%= image_tag("MOO_LOGO-vektor.png", alt: "image", class: "logo-mobile", style: "height: 70px; width: auto;") %>
       <% end %>
     </div>
     <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
       <div class="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
-        <h3 class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">WISE</h3>
+        <%= link_to root_path, class: "text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0", data: { turbo: false }, style: "text-decoration: none;" do %>
+          <%= image_tag("MOO_LOGO-vektor.png", alt: "MOO Logo", style: "height: 50px; width: auto;") %>
+        <% end %>
         <button type="button" class="btn-close-custom mr-[-0.75rem] m-0 p-0 leading-none text-[#605dba]" data-bs-dismiss="offcanvas" aria-label="Close">
           <i class="fas fa-times" style="font-size: 24px;"></i> <!-- Povećana ikona s direktnim stilom -->
         </button>
       </div>
       <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
         <ul class="navbar-nav">
-          <li class="nav-item"><%= link_to 'Why MOO?', root_path, class: "nav-link", data: { turbo: false } %></li>
+          <li class="nav-item"><%= link_to 'Why MOO?', whymoo_path, class: "nav-link", data: { turbo: false } %></li>
           <li class="nav-item"><%= link_to 'Solutions', solutions_path, class: "nav-link", data: { turbo: false } %></li>
           <li class="nav-item"><%= link_to 'Resources', resources_path, class: "nav-link", data: { turbo: false } %></li>
           <li class="nav-item"><%= link_to 'Pricing', pricing_path, class: "nav-link", data: { turbo: false } %></li>
-          <li class="nav-item"><%= link_to 'Think Green', think_green_path, class: "nav-link nav-green", data: { turbo: false } %></li>
+          <li class="nav-item">
+            <%= link_to 'Think Green', think_green_path, class: "nav-link", data: { turbo: false }, style: "color: #4caf50 !important; transition: color 0.3s ease !important;" %>
+          </li>
           <li class="nav-item"><%= link_to 'About Us', about_us_path, class: "nav-link", data: { turbo: false } %></li>
           <li class="nav-item"><%= link_to 'Contact', contact_path, class: "nav-link", data: { turbo: false } %></li>
         </ul>
       </div>
     </div>
     <div class="navbar-other w-full flex justify-end items-center ml-auto">
-      <ul class="navbar-nav flex-row items-center">
+      <ul class="navbar-nav !flex-row items-center">
         <li class="nav-item">
-          <%= link_to 'Book Your Demo', "https://calendly.com/moocrew-intro/30min", target: "_blank", class: "btn btn-book !rounded-full !px-6 !py-2", aria: { label: "Book your demo" }, title: "Book your demo" %>
+          <%= link_to 'Book Your Demo', "https://calendly.com/moocrew-intro/30min", target: "_blank", class: "btn btn-book !rounded-full !px-6 !py-2 book-mobile", aria: { label: "Book your demo" }, title: "Book your demo" %>
         </li>
         <li class="nav-item xl:hidden lg:hidden">
           <button class="hamburger offcanvas-nav-btn"><span></span></button>

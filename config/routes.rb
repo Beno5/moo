@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get 'whymoo', to: 'pages#whymoo', as: 'whymoo'
   get 'solutions', to: 'pages#solutions', as: 'solutions'
   get 'resources', to: 'pages#resources', as: 'resources'
@@ -11,5 +10,5 @@ Rails.application.routes.draw do
   post 'contact_form/send_email'
 
   # Root route for the home page
-  root "pages#home"
+  root 'pages#home'
 end
