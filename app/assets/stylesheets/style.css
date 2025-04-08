@@ -35140,3 +35140,7 @@ blockquote.video-wrapper .video-content.icon-top:before {
   font-weight: bold;
   font-size: larger;
 }
+
+.flex-row-reverse-imp {
+  flex-direction: row-reverse !important;
+}
