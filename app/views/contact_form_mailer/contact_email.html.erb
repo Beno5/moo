@@ -1,2 +1,2 @@
-<h1>New Message from <%= @name %></h1>
-<p><%= @message %></p>
+<h1>New Message from <%= @name.presence || 'Unknown' %> - <%= @email.presence || 'No email' %></h1>
+<p><%= simple_format(@message.presence || 'No message provided.') %></p>

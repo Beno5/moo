@@ -95,20 +95,20 @@
         <div class="w-full flex-[0_0_auto] px-[15px] max-w-full xl:!order-2 lg:!order-2 mt-[50px]">
           <div class="flex flex-wrap mx-[-15px] xl:mx-[-12.5px] lg:mx-[-12.5px] md:mx-[-12.5px] mt-[-25px]">
             <% [
-    ["Onboarding", "fa-solid fa-user-check", "#FEDCC7"],
-    ["Market Research", "fa-solid fa-search", "#FEE0CC"],
-    ["LinkedIn and Email Marketing", "fa-solid fa-envelope", "#FEE0CB"],
-    ["Conversation Management", "fa-solid fa-comments", "#F8C0A2"], 
-    ["Needs Assessment and Solution", "fa-solid fa-tools", "#F9CDB1"],
-    ["Booking Meaningful Meetings", "fa-solid fa-calendar-check", "#FDD8C0"]
+    ["Onboarding", "fa-solid fa-user-check", "#ffffff"],
+    ["Market Research", "fa-solid fa-search", "#ffffff"],
+    ["LinkedIn and Email Marketing", "fa-solid fa-envelope", "#ffffff"],
+    ["Conversation Management", "fa-solid fa-comments", "#ffffff"], 
+    ["Needs Assessment and Solution", "fa-solid fa-tools", "#ffffff"],
+    ["Booking Meaningful Meetings", "fa-solid fa-calendar-check", "#ffffff"]
   ].each_with_index do |(title, icon, bg_color), index| %>
               <div class="md:w-4/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[12.5px] lg:px-[12.5px] md:px-[12.5px] px-[15px] max-w-full mt-[25px]">
                 <div class="card h-full flex flex-col justify-center items-center text-center" style="background-color: <%= bg_color %>;">
-                  <div class="card-body p-[40px]">
+                  <div class="card-body flex-auto p-[40px]">
                     <div class="icon-container mb-4 flex flex-col items-center">
-                      <i class="<%= icon %> text-[#3f78e0] text-[2rem]"></i>
+                      <i class="<%= icon %> text-bold-orange text-[#3f78e0] text-[2rem]"></i>
                     </div>
-                    <h4 class="text-center font-bold mb-2"><%= title %></h4>
+                    <h4 class="text-center  font-bold mb-2"><%= title %></h4>
                     <p class="text-center !mb-0">
                       <%= [
               "Understanding your company, services, and target audience takes time. We'll spend a few weeks getting to know you (yes, it takes that long as it's a fundamental part), identifying your targets, and aligning with your approach.",

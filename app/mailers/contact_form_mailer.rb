@@ -1,10 +1,11 @@
 class ContactFormMailer < ApplicationMailer
-  default from: 'info@wiseaustria.com'
+  default from: 'info@moobd.com'
 
-  def contact_email(name, message)
+  def contact_email(name, message, email)
     @name = name
+    @email = email
     @message = message
 
-    mail(to: 'info@wiseaustria.com', subject: "New Message from #{name}!")
+    mail(to: 'info@moobd.com', subject: "New Message from #{name}!")
   end
 end

@@ -96,9 +96,9 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: 'smtp.privateemail.com', # Namecheap SMTP server
     port: 587,
-    domain: 'wiseaustria.com',
-    user_name: 'info@wiseaustria.com',
-    password: 'Wise2025', # Use the correct password for info@zen-os.com
+    domain: 'moobd.com',
+    user_name: 'info@moobd.com',
+    password: 'Moobd2025', # Use the correct password for info@zen-os.com
     authentication: :plain,
     enable_starttls_auto: true
   }
